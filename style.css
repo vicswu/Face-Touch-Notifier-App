@@ -10,6 +10,10 @@ body {
     min-height: 100vh;
 }
 
+header {
+    margin: 50px;
+}
+
 .container {
     margin: 0px auto;
     width: 500px;

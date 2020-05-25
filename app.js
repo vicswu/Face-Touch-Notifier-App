@@ -35,7 +35,10 @@ function runDetection() {
         .then(predictions => {
             console.log(predictions);
             if (predictions.length > 0) {
-                alert("Don't touch your face!!!");
+                const utterance = new SpeechSynthesisUtterance("Don't touch your face");
+                utterance.rate = 1;
+                speechSynthesis.speak(utterance);
+                alert("Don't touch your face!");
             }
         });
 }
